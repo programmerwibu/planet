@@ -39,6 +39,21 @@ nav ul li a{
     text-decoration: none;
 }
 
+nav ul li a:after {
+    position: absolute;
+    content: '';
+    height: 40px;
+    width: 50px;
+    margin-left: -50px;;
+    border-bottom: solid 3px #3a3a3a;
+    transition: left 250ms ease-in-out, right 250ms ease-in-out;
+    opacity: 0;
+}
+
+nav ul li a:hover:after {
+    opacity: 1;
+  }
+  
 .hero h1{
     font-size: 74px !important;
     margin-top: 12%;
